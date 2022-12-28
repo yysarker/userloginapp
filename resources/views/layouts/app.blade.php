@@ -1,18 +1,9 @@
 <?php
-	/**
-	 *  Created by PhpStorm.
-	 *  User: yys
-	 *  Date: 12/28/2022
-	 *  Time: 7:04 PM
-	 */
-?>
-
-<?php
     /**
      *  Created by PhpStorm.
      *  User: yys
      *  Date: 12/28/2022
-     *  Time: 1:16 PM
+     *  Time: 7:04 PM
      */
 ?>
     <!DOCTYPE html>
@@ -27,6 +18,13 @@
     <meta name="keywords" content="content"/>
 
     <title>@yield('title')</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset ('assets/images/icons/favicon.ico') }}">
+    <!-- Bootstrap Icon CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -47,13 +45,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}"/>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset ('assets/images/icons/favicon.ico') }}"/>
 </head>
 <body>
 
 {{--Header Part--}}
-@include('layout/menu')
+@include('layouts.menu')
 
 
 <main>
@@ -68,5 +64,6 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
 ></script>
+
 </body>
 </html>
