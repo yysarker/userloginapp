@@ -1,4 +1,4 @@
-@extends('layouts/signup')
+@extends('layouts.signup')
 
 @section('content')
 <div class="section-forgot-password">

@@ -6,7 +6,7 @@
      *  Time: 7:04 PM
      */
 ?>
-@extends('layouts/signup')
+@extends('layouts.signup')
 
 @section('content')
 <div class="section-register">
