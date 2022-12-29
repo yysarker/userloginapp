@@ -15,12 +15,6 @@
                     <div class="card">
                         <div class="card-title">{{ __ ('Forgot Password') }}</div>
                         <div class="card-body">
-                            @if (session('status'))
-                                <div class="alert alert-success" role="alert">
-                                    {{ session('status') }}
-                                </div>
-                            @endif
-
                             <form method="POST" action="{{ route('password.email') }}">
                                 @csrf
                                 <div class="mt-3">
@@ -34,7 +28,7 @@
                                     @enderror
                                 </div>
                                 <div class="my-5">
-                                    <button type="submit" class="btn btn-green">{{ __ ('Request Password') }}</button>
+                                    <button type="submit" id="resetButtonTest" class="btn btn-green">{{ __ ('Request Password') }}</button>
                                 </div>
                             </form>
                         </div>

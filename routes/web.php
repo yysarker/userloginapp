@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/test', function () {
-    return view('welcome');
-});
-
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('redirect', function () {
+    return view('auth.passwords.notification.password-request');
+})->name('redirect');
 
 Auth::routes();
 
