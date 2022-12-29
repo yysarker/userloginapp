@@ -14,27 +14,15 @@
                 <img src="{{ asset ('assets/images/logo.png') }}" alt="logo" class="logo"/>
             </a>
             <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
+                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"> </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
 
@@ -81,13 +69,8 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                        >
+                            class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Resources
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -103,9 +86,7 @@
                     </li>
                     @if (Route::has('login'))
                         @auth
-{{--                            <li class="nav-item">--}}
-{{--                                <a href="{{ url('/home') }}" class="">Home</a>--}}
-{{--                            </li>--}}
+                            {{-- Logout part --}}
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
