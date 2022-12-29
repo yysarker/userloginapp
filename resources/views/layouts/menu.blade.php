@@ -1,10 +1,10 @@
 <?php
-	/**
-	 *  Created by PhpStorm.
-	 *  User: yys
-	 *  Date: 12/28/2022
-	 *  Time: 7:04 PM
-	 */
+    /**
+     *  Created by PhpStorm.
+     *  User: yys
+     *  Date: 12/28/2022
+     *  Time: 7:04 PM
+     */
 ?>
 
 <header>
@@ -103,8 +103,16 @@
                     </li>
                     @if (Route::has('login'))
                         @auth
+{{--                            <li class="nav-item">--}}
+{{--                                <a href="{{ url('/home') }}" class="">Home</a>--}}
+{{--                            </li>--}}
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                @csrf
+                            </form>
                             <li class="nav-item">
-                                <a href="{{ url('/home') }}" class="">Home</a>
+                                <a href="{{ route('logout') }}" class="nav-link"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Log
+                                    out</a>
                             </li>
                         @else
                             <li class="nav-item">

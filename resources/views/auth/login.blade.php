@@ -87,7 +87,7 @@
 
                                     </div>
                                     <div class="mt-5">
-                                        <div class="btn btn-green">{{ __('Sign In') }}</div>
+                                        <button type="submit" class="btn btn-green">{{ __('Sign In') }}</button>
                                     </div>
                                 </form>
                                 <div class="links">
