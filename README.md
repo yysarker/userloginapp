@@ -53,4 +53,4 @@ php artisan migrate
 php artisan serve
 ```
 
-## :sparkles:<p align="center">Now Enjoy this App</p>:sparkles:
+## <p align="center">:sparkles:Now Enjoy this App:sparkles:</p>
